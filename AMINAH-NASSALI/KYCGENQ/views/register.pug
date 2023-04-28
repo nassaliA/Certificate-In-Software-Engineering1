@@ -1,0 +1,46 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title KYC REGISTER
+  link(rel='stylesheet' href='reg.css/reg.css')
+.container
+  h1#ld GENQ KYC REGISTRATION FORM
+  form(onsubmit='return validate()' method='POST')
+    fieldset
+      | BIODATA
+      label(for='firstName')
+      input#firstName(type='text' placeholder='firstName')
+      label(for='firstName')
+      input#lastName(type='text' placeholder='lastName')
+      label(for='firstName')
+      input#dob(type='date' placeholder='date of birth(mm/dd/yy)')
+      label(for='firstName')
+      input#firstName(type='text' placeholder='firstName')
+    fieldset
+      | LOCATION
+      br
+      label(for='loction')
+      input#location(type='text' placeholder='location')
+      label(for='country')
+        select#country(name='country')
+          option(value='selected') (Country)
+          option(value='1') Uganda 
+          option(value='2') Kenya
+          option(value='3') Tanzania
+          option(value='4') Rwanda
+          option(value='5') Burundi
+      input#dob(type='date' placeholder='date of birth(mm/dd/yy)')
+      label(for='firstName')
+      input#firstName(type='text' placeholder='firstName')
+    fieldset
+      | CONTACTS and ADDRESS
+      label(for='PhoneNumber')
+      input#PhoneNumber(type='number' placeholder='PhoneNumber 1')
+      label(for='PhoneNumber')
+      input#PhoneNumber2(type='number' placeholder='PhoneNumber 2')
+      label(for='email')
+      input#dob(type='date' placeholder='date of birth(mm/dd/yy)')
+    button(type='submit') Submit
+  script(src='/AMINAH-NASSALI/KYC GENQ/public/JS/')
